@@ -5,7 +5,7 @@
 <title> Login Page </title>
 <script>  
   function Loginform(){  
-  var name=document.logform.name.value;  
+  var name=document.logform.username.value;  
   var password=document.logform.password.value;  
    
   if (name==null || name==""){  
@@ -17,6 +17,7 @@
     }  
   }  
   </script>
+
 <style> 
 .header-img {
   width: 100%;
@@ -127,9 +128,7 @@ button {
 </head>
 <Body background="img\background.jpg"> 
 <body>
-<div class="header-img">
-	<img src="img\pro1.jpg" alt="logo" width="200" height="200">
-	</div>
+
   <h1>Login Form</h1>
 
   <form name ="logform" onsubmit="return Loginform()" action="category.html">
@@ -147,7 +146,7 @@ button {
       <br>
       <br>
 
-      <button type="submit">Login</button>
+      <input type="button" value="Login" onclick="location.href = 'main.html'">
       <br>
       <br>
       <label>
